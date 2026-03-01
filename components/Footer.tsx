@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Zap, Github } from "lucide-react";
 
 const links = [
   { label: "Funcionalidades", href: "#features" },
@@ -37,10 +37,21 @@ export default function Footer() {
           ))}
         </nav>
 
-        {/* Copyright */}
-        <p className="text-xs text-slate-600">
-          © {year} Nexus Ops. Todos os direitos reservados.
-        </p>
+        {/* GitHub + Copyright */}
+        <div className="flex flex-col items-center md:items-end gap-2">
+          <a
+            href="https://github.com/eliezerassis/nexusops-site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-300 transition-colors"
+          >
+            <Github className="w-4 h-4" />
+            GitHub
+          </a>
+          <p className="text-xs text-slate-600">
+            © {year} Nexus Ops. Todos os direitos reservados.
+          </p>
+        </div>
       </div>
     </footer>
   );
