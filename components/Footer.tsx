@@ -49,7 +49,7 @@ export default function Footer() {
             GitHub
           </a>
           <p className="text-xs text-slate-600">
-            © {year} Nexus Ops. Todos os direitos reservados.
+            © {year} Nexus Ops. Feito com Next.js + Vercel.
           </p>
         </div>
       </div>
