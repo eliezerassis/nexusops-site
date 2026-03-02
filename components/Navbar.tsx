@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X, Zap } from "lucide-react";
+import { APP_LOGIN_URL } from "@/lib/constants";
 
 const links = [
   { label: "Funcionalidades", href: "#features" },
@@ -37,7 +38,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="https://dwellmate-ops.vercel.app"
+          href={APP_LOGIN_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2 transition-colors"
@@ -69,7 +70,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://dwellmate-ops.vercel.app"
+            href={APP_LOGIN_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex justify-center rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-4 py-2 transition-colors"

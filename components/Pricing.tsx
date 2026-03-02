@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, Star } from "lucide-react";
+import { APP_LOGIN_URL } from "@/lib/constants";
 
 type Plan = {
   id: string;
@@ -207,7 +208,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://dwellmate-ops.vercel.app"
+                href={APP_LOGIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors ${
